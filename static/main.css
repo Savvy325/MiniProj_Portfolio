@@ -1,0 +1,173 @@
+@import url(./media.css);
+body {
+    margin: 0px;
+    padding: 20px;
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dca9e0;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.grid-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 200px 200px auto auto auto;
+}
+
+.picture{
+
+    background: url("./images/profile_pic.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1/3;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border: solid;
+    transition: width 2s, height 2s, transform 2s;
+
+}
+
+.picture:hover{
+
+    transform: scale(2,2);
+}
+
+@keyframes pulse {
+
+    0%, 100% {text-shadow: 2px 2px 8px rgb(243, 1, 203);}
+    50% {text-shadow: 2px 2px 8px rgb(0, 0, 255);}
+
+}
+
+.name{
+    
+    grid-column: 3;
+    grid-row: 2;
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: pulse 3s infinite;
+}
+
+
+.color{
+
+    grid-column: 1/5;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    background-color: #a23df5;
+    z-index: -1;
+}
+
+.nav{
+    grid-column: 1/5;
+    grid-row: 3;
+    background-color: #a23df5;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+}
+
+.nav > a:hover {
+
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+.welcome{
+
+    grid-column: 1/5;
+    grid-row: 4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #50187e;
+    color: white;
+    padding: 20px;
+}
+.bio{
+
+    grid-column: 1/5;
+    grid-row: 5;
+    padding: 20px;
+    background-color: #a23df5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* this is for the about.html */
+
+.background{
+
+    grid-column: 1/5;
+    grid-row: 4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #50187e;
+    color: white;
+    padding: 20px;
+    border: solid black;
+
+}
+
+.about-info{
+
+  grid-column: 1/5;  
+  grid-row: 5;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #a23df5;
+}
+
+/*this is for the resume.html */
+
+.curriculum{
+
+
+        grid-column: 1/5;
+        grid-row: 4;
+        padding: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: small;
+        background-color: #50187e;
+        color: white;
+        padding: 20px;
+        border: solid black;
+        justify-content: center;
+        justify-content: space-evenly;
+        display: flex;
+    
+}
+
+.resume-info{
+
+    grid-column: 1/5;  
+    grid-row: 6;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #a23df5;
+    padding: 20px;
+}
+
+.highlight-text {
+
+        grid-column: 1/5;
+        grid-row: 5;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #50187e;
+        color: white;
+        padding: 20px;
+        border: solid black;
+        border-top: none;
+
+}

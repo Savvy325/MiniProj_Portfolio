@@ -1,0 +1,30 @@
+@media only screen and (max-width:700px) {
+
+    .nav {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .curriculum {
+
+        flex-direction: column !important;
+        align-items: left;
+
+    }
+
+    .resume-info {
+
+        flex-direction: column !important;
+        align-items: left;
+
+    }
+
+    .about-info {
+
+        flex-direction: column !important;
+        align-items: left;
+
+    }
+}
